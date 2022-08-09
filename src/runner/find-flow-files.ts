@@ -120,10 +120,10 @@ export function findFlowFilesAsync(
           }
         } else if (stats.isFile()) {
           // Otherwise if this is a JavaScript file...
-          if (fileName.endsWith(".js") || fileName.endsWith(".jsx")) {
+          // if (fileName.endsWith(".js") || fileName.endsWith(".jsx")) {
             // Then process the file path as JavaScript.
             processJavaScriptFilePath(filePath, stats.size, reporter);
-          }
+          // }
         }
         // We are done with this async task
         done();
